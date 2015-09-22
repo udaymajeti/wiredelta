@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WA Insitute</title>
+</head>
+
+<body>
+
+background-color: #cccccc;
+  <div>
+    <h4>THE AGE CALCULATOR</h4>
+    <p>Enter your date of birth
+      <input type="date" id='dob' />
+    </p>
+    <input type='button' id='btnCalculateAge' value="Calculate" />
+    <p id='currentAge'></p>
+  </div>
+  <div>
+    <h4>THE LIFETIME SUPPLY CALCULATOR</h4>
+    <p>Enter amount of snack per day
+      <input type="text" id='amount' />
+    </p>
+    <input type='button' id='btnCalculateSupply' value="Calculate Supply" />
+    <p id='supplyResult'></p>
+  </div>
+  <div>
+    <h4>THE GEOMETRIZER</h4>
+    <p>Enter the radius:
+      <input type="number" id='radius' />
+    </p>
+    <input type="radio" name="geometrize" value="Circumference" checked> Circumference
+    <input type="radio" name="geometrize" value="Area"> Area
+    <br>
+    <input type='button' id='btnCalculateGeo' value="Calculate" />
+    <p id='geoResult'></p>
+  </div>
+  <div>
+    <h4>THE TEMPERATURE CONVERTER</h4>
+    <p>Select the unit to which you want to convert.
+      <br>
+      <select id='destUnit'>
+        <option>Celsius</option>
+        <option>Fahrenheit</option>
+      </select>
+      <br> Enter current Temperature in
+      <span id='currentUnit'>Fahrenheit</span>:
+      <input type="number" id='temp' />
+    </p>
+    <input type='button' id='btnConvert' value="Convert" />
+    <p id='tempResult'></p>
+  </div>
+  <script type="text/javascript" src="./jquery.js"></script>
+  <script type="text/javascript" src="./tasks.js"></script>
+</body>
+
+</html>
